@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #580c0d;
+    background-image: url('../images/bg-pattern.png');
+    font-family: sans-serif;
+}
+
+.header {
+    
+    img {
+        width: 100%;
+        border-bottom: solid 5px #951713;
+    }
+}
+
+.models {
+    display: none;
+}
+
+.catalog {
+    background-color: #1f0100;
+    border: solid 1px #951713;
+    padding: 20px;
+    width: 70%;
+    margin-top: -50px;
+
+    .catalogHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+        margin-bottom: 16px;
+
+        .sortPriceButton {
+            background: rgb(188,0,0);
+            background: linear-gradient(180deg, rgba(188,0,0,1) 0%, rgba(138,0,0,1) 100%);
+            color: white;
+            padding: 12px;
+            border: none;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+
+            i {
+                margin-left: 48px;
+            }
+
+            &:hover {
+                background: linear-gradient(180deg, rgba(138,0,0,1) 0%, rgba(188,0,0,1) 100%);
+            }
+        }
+    }
+
+    .catalogBody {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+
+        .carItem {
+            background-color: black;
+            color: white;
+            border: solid 1px white;
+            cursor: pointer;
+        
+            img {
+                width: 100%;
+            }
+
+            .carInfo {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 30px;
+
+                .carName {
+                    padding-left: 6px;
+                }
+
+                .carPrice {
+                    padding: 6px;
+                    background: rgb(188,0,0);
+                    background: linear-gradient(180deg, rgba(188,0,0,1) 0%, rgba(138,0,0,1) 100%);
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    padding: 24px 0;
+    border-top: solid 5px #951713;
+
+    img {
+        width: 75%;
+    }
+}   
