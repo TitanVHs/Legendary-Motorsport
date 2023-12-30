@@ -1,7 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat';
 }
 
 body {
@@ -10,7 +13,6 @@ body {
     align-items: center;
     background-color: #580c0d;
     background-image: url('../images/bg-pattern.png');
-    font-family: sans-serif;
 }
 
 .header {
@@ -70,6 +72,7 @@ body {
             color: white;
             border: solid 1px white;
             cursor: pointer;
+            transition: all 0.2s ease;
         
             img {
                 width: 100%;
@@ -82,6 +85,7 @@ body {
                 height: 30px;
 
                 .carName {
+                    font-size: 14px;
                     padding-left: 6px;
                 }
 
@@ -106,4 +110,4 @@ body {
     img {
         width: 75%;
     }
-}   
+}
